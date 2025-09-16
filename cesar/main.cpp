@@ -9,7 +9,7 @@ string cesar(string mot) {
 
     for (char c : mot) { // pour chaque lettre du mot
         if (isalpha(c)) { // si c’est une lettre
-            char base = isupper(c) ? 'A' : 'a'; // base différente selon majuscule ou minuscule de 0 à 25
+            char base = isupper(c) ? 'A' : 'a'; // base différente selon majuscule ou minuscule de 0 à 26
             // (c - base) → transforme la lettre en un nombre de 0 à 25.
             // % 26 → permet de boucler dans l’alphabet (si on dépasse Z, on revient à A).
             // + base → on revient à un caractère ASCII
